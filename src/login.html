@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Login</title>
+    <title>Inicio de Sesión</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -22,7 +22,7 @@
 
 </head>
 
-<body class="bg-gradient-primary">
+<body class="bg-gradient-dark" >
 
     <div class="container">
 
@@ -35,46 +35,49 @@
                     <div class="card-body p-0">
                         <!-- Nested Row within Card Body -->
                         <div class="row">
-                            <div class="col-lg-6 d-none d-lg-block bg-login-image"></div>
+                            <!-- <div class="col-lg-6 d-none d-lg-block align-items-center justify-content-center bg-login-image">-->
+                                <div class="col-lg-6 d-none d-lg-flex align-items-center justify-content-center bg-login-image">
+                                    <img src="img/grupo.png" alt="" class="img-fluid" style="max-width: 500px;">
+                                </div>
+
                             <div class="col-lg-6">
                                 <div class="p-5">
                                     <div class="text-center">
-                                        <h1 class="h4 text-gray-900 mb-4">Welcome Back!</h1>
+                                        <h1 class="h4 text-gray-900 mb-4">Bienvenido!</h1>
                                     </div>
-                                    <form class="user">
+                                    <form  name="register_form" action="backend/signin.php" method="post">
                                         <div class="form-group">
                                             <input type="email" class="form-control form-control-user"
                                                 id="exampleInputEmail" aria-describedby="emailHelp"
-                                                placeholder="Enter Email Address...">
+                                                name="e_mail"  placeholder="Correo electronico...">
                                         </div>
                                         <div class="form-group">
                                             <input type="password" class="form-control form-control-user"
-                                                id="exampleInputPassword" placeholder="Password">
+                                                name="p_sswd" id="exampleInputPassword" placeholder="Contraseña">
                                         </div>
                                         <div class="form-group">
                                             <div class="custom-control custom-checkbox small">
                                                 <input type="checkbox" class="custom-control-input" id="customCheck">
-                                                <label class="custom-control-label" for="customCheck">Remember
-                                                    Me</label>
+                                                <label class="custom-control-label" for="customCheck">Recuerdame</label>
                                             </div>
                                         </div>
-                                        <a href="index.html" class="btn btn-primary btn-user btn-block">
-                                            Login
-                                        </a>
-                                        <hr>
+                                        <button type="submit" class="btn btn-dark text-white btn-user btn-block">
+                                            Ingresar
+                                        </button>
+
                                         <a href="index.html" class="btn btn-google btn-user btn-block">
-                                            <i class="fab fa-google fa-fw"></i> Login with Google
+                                            <i class="fab fa-google fa-fw"></i> Ingresar con Google
                                         </a>
                                         <a href="index.html" class="btn btn-facebook btn-user btn-block">
-                                            <i class="fab fa-facebook-f fa-fw"></i> Login with Facebook
+                                            <i class="fab fa-facebook-f fa-fw"></i> Ingresar con Facebook
                                         </a>
                                     </form>
                                     <hr>
                                     <div class="text-center">
-                                        <a class="small" href="forgot-password.html">Forgot Password?</a>
+                                        <a class="small text-dark" href="forgot-password.html">Olvido su contraseña?</a>
                                     </div>
                                     <div class="text-center">
-                                        <a class="small" href="register.html">Create an Account!</a>
+                                        <a class="small text-dark" href="register.html">Crear una cuenta</a>
                                     </div>
                                 </div>
                             </div>
